@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Secure Messenger
+Comment=Generate secure QR codes for messages
+Exec=/home/pi/secure_messenger.bin
+Type=Application
+Terminal=false
+Icon=utilities-system-monitor
