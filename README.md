@@ -1,30 +1,23 @@
-Below is a polished, self-contained GitHub Readme for the **Crypto-Zero-QR** project, formatted in Markdown based on the details you provided. It’s designed to be clear, concise, and ready to upload to your repository.
 
 ---
-
 # Crypto-Zero-QR
 
-**Crypto-Zero-QR** is a secure messaging system tailored for electrical engineers in high-voltage environments. It provides a simple graphical interface, AES-256 encryption, and QR code generation, all while staying air-gapped for maximum security. Compliant with **ISO/IEC 27001**, **OWASP**, and **NIST** standards, this system is deployable by an apprentice with basic Linux skills using a Raspberry Pi Zero.
-
+**Crypto-Zero-QR** is a secure messaging system for research at TuM Institute for Advanced Study, Advanced Computation, Cryptography: Post Doc Bucket: 4. A simple graphical interface, AES-256 encryption, and QR code generation, while staying air-gapped for maximum security. Demonstrating compliance principles with **ISO/IEC 27001**, **OWASP**, and **NIST** standards, hence this is in bucket 4 not 1 <80)
 ## Overview
-
-This system enables engineers to:
+This system enables research engineers to:
 - **Input Messages**: Enter short messages (up to 256 characters).
 - **Encrypt Securely**: Use AES-256-CBC encryption for data protection.
 - **Generate QR Codes**: Create scannable QR codes for offline transfer via smartphones in airplane mode.
 - **View Easily**: Display QR codes through a glove-friendly interface.
-
-Built to enhance an existing Windows-based tool, Crypto-Zero-QR leverages the Raspberry Pi Zero’s portability, requiring only a screen and keyboard. Its offline design and minimal interaction make it ideal for high-voltage settings.
-
+Built to enhance an existing Windows-based tool, Crypto-Zero-QR leverages the Raspberry Pi Zero’s portability, requiring only a screen and keyboard.
 ## Key Features
-
 - **Robust Security**:
   - AES-256-CBC encryption.
   - No hardcoded secrets.
   - Secure key and IV storage.
   - Local audit logging.
 - **Intuitive Interface**:
-  - Tkinter-based GUI, clickable with gloves (no live graphs included).
+  - Tkinter-based GUI, clickable with gloves for challenging environment (no live graphs included).
 - **Dependable QR Codes**:
   - Medium error correction for reliability.
   - Scalable format for future display upgrades.
@@ -34,9 +27,7 @@ Built to enhance an existing Windows-based tool, Crypto-Zero-QR leverages the Ra
   - **NIST SP 800-53**: Secure error handling and permissions.
 - **Ease of Use**:
   - One-click QR code generation via desktop shortcut.
-
 ## Project Files
-
 To deploy Crypto-Zero-QR, you’ll need:
 - **`secure_messenger.py`**: Core script for GUI, encryption, and QR code generation.
 - **`config.ini`**: Stores user-generated encryption key and IV.
@@ -44,7 +35,6 @@ To deploy Crypto-Zero-QR, you’ll need:
 - **`setup_autostart.sh`**: Optional script for boot-time autostart.
 - **`secure_messenger.desktop`**: Desktop entry for manual launch.
 - **`README.md`**: This documentation.
-
 ---
 
 ## Setup Instructions
