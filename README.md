@@ -9,7 +9,7 @@ This system enables research engineers to:
 - **Encrypt Securely**: Use AES-256-CBC encryption for data protection.
 - **Generate QR Codes**: Create scannable QR codes for offline transfer via smartphones in airplane mode.
 - **View Easily**: Display QR codes through a glove-friendly interface.
-Built to enhance an existing Windows-based tool, Crypto-Zero-QR leverages the Raspberry Pi Zero’s portability, requiring only a screen and keyboard.
+Built to enhance an existing Windows-based tool, Crypto-Zero-QR leverages the Raspberry Pi Zero’s portability, just a screen and keyboard.
 ## Key Features
 - **Robust Security**:
   - AES-256-CBC encryption.
