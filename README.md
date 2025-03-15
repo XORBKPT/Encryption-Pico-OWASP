@@ -2,7 +2,7 @@
 ---
 # Crypto-Zero-QR
 
-**Crypto-Zero-QR** is a secure messaging system for research at TuM Institute for Advanced Study, Advanced Computation, Cryptography: Post Doc Bucket: 4. A simple graphical interface, AES-256 encryption, and QR code generation, while staying air-gapped for maximum security. Demonstrating compliance principles with **ISO/IEC 27001**, **OWASP**, and **NIST** standards, hence this is in bucket 4 not 1 <80)
+**Crypto-Zero-QR** is a secure messaging system for research at TuM Institute for Advanced Study, Advanced Computation, Cryptography: Post Doc Bucket: 4. A simple graphical interface, AES-256 encryption, and QR code generation, while staying air-gapped for maximum security. Principles are shown for **ISO/IEC 27001**, **OWASP**, and **NIST**; hence this is in bucket 4 (not "1" <80)
 ## Overview
 This system enables research engineers to:
 - **Input Messages**: Enter short messages (up to 256 characters).
