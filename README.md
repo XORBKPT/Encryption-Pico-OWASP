@@ -162,11 +162,3 @@ To deploy Crypto-Zero-QR, you’ll need:
   - Confirm `python3-tk` is installed and **Desktop Autologin** is enabled.
 
 ---
-
-## License
-
-MIT License, compatible with dependencies like `qrcode` and `Pillow`.
-
----
-
-This Readme is optimized for GitHub, offering detailed setup, usage, and troubleshooting guidance while highlighting security and compliance. Let me know if you need tweaks or additional sections!
