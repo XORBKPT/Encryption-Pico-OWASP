@@ -17,7 +17,7 @@ This tiny program enables PhD research engineers to:
   - Secure key and IV storage.
   - Local audit logging.
 - **Intuitive Interface**:
-  - Tkinter-based GUI, clickable with gloves for challenging environment (no live graphs included).
+  - Tkinter-based GUI, clickable with gloves for challenging environment.
 - **Dependable QR Codes**:
   - Medium error correction for reliability.
   - Scalable format for future display upgrades.
@@ -36,20 +36,16 @@ To deploy Crypto-Zero-QR, you’ll need:
 - **`secure_messenger.desktop`**: Desktop entry for manual launch.
 - **`README.md`**: This documentation.
 ---
-
 ## Setup Instructions
-
 ### Hardware Requirements
 - Raspberry Pi Zero
 - MicroSD card (32GB recommended)
 - Monitor, keyboard, and mouse
 - Optional: Small portable display
-
 ### Software Setup
 1. **Install Raspberry Pi OS Lite**:
    - Download from the [official site](https://www.raspberrypi.org/software/) and flash it to the microSD card using Raspberry Pi Imager.
    - Insert the card into the Pi Zero and power it on.
-
 2. **Initial Configuration**:
    - Log in with default credentials (`pi` / `raspberry`).
    - Run:
@@ -62,7 +58,6 @@ To deploy Crypto-Zero-QR, you’ll need:
      ```bash
      sudo reboot
      ```
-
 3. **Install Dependencies**:
    - Transfer project files to `/home/pi` (e.g., via USB).
    - Execute:
@@ -71,7 +66,6 @@ To deploy Crypto-Zero-QR, you’ll need:
      ./install_dependencies.sh
      ```
    - Installs `tkinter`, `qrcode`, `Pillow`, and other dependencies.
-
 4. **Generate Encryption Key and IV**:
    - Create a secure key and IV:
      ```bash
@@ -86,7 +80,6 @@ To deploy Crypto-Zero-QR, you’ll need:
      ```bash
      chmod 600 config.ini
      ```
-
 5. **Compile to Executable**:
    - Install PyInstaller:
      ```bash
@@ -98,67 +91,49 @@ To deploy Crypto-Zero-QR, you’ll need:
      mv dist/secure_messenger secure_messenger.bin
      chmod +x secure_messenger.bin
      ```
-
 6. **Set Up Desktop Shortcut**:
    - Copy to desktop:
      ```bash
      cp secure_messenger.desktop /home/pi/Desktop/
      chmod +x /home/pi/Desktop/secure_messenger.desktop
      ```
-
 7. **Optional Autostart**:
    - Enable autostart:
      ```bash
      chmod +x setup_autostart.sh
      ./setup_autostart.sh
      ```
-
----
-
+     ---
 ## Usage
-
 1. **Launch the System**:
    - Double-click the **Secure Messenger** desktop icon or run:
      ```bash
      ./secure_messenger.bin
      ```
-
 2. **Enter a Message**:
    - Type a message (max 256 characters) in the text box.
-
 3. **Generate QR Code**:
    - Click **"Generate QR Code"** to encrypt and display the QR code.
-
 4. **Scan the QR Code**:
    - Use a smartphone in airplane mode with a QR scanner to capture it.
-
 5. **Decrypt Later**:
-   - Resolve the QR code online (if needed) at lunch, then decrypt at another Pi Zero station.
-
+   - Resolve the QR code online (if needed) at lunch, then decrypt at another Pi Zero device.
 ---
-
 ## Security and Compliance
-
 - **ISO/IEC 27001**: Logs audits to `/var/log/secure_messenger.log`, enforces least privilege with the `pi` user.
 - **OWASP**: Validates input, avoids hardcoded credentials.
 - **NIST SP 800-53**: Ensures secure file permissions and error handling.
 
 ---
-
 ## Enhancements
-
 - **Advanced QR Codes**: Use higher versions (e.g., `version=2`) or `ERROR_CORRECT_H` for more data or resilience.
 - **Styling**: Customize `box_size` or colors in the QR code for better visibility.
-
 ---
-
 ## Troubleshooting
-
 - **QR Code Not Showing**:
   - Verify `config.ini` has correct key/IV lengths.
 - **Errors Occur**:
   - Check `/var/log/secure_messenger.log`.
 - **GUI Problems**:
   - Confirm `python3-tk` is installed and **Desktop Autologin** is enabled.
-
 ---
