@@ -2,22 +2,22 @@
 ---
 # Encryption-Pico-OWASP
 
-**Encryption-Pico-OWASP** is a secure messaging system for research at TuM Institute for Advanced Study, Advanced Computation, Cryptography: Post Doc Bucket: 4. A simple graphical interface, AES-256 encryption, and QR code generation, while staying air-gapped for maximum security. Principles are shown for **ISO/IEC 27001**, **OWASP**, and **NIST**; hence this is in bucket 4 (not "1" <80)
+**Encryption-Pico-OWASP** is a demo to show a simple graphical interface, AES-256 encryption, and QR code generation, while staying air-gapped for maximum security. 
+Principles are shown for **ISO/IEC 27001**, **OWASP**, and **NIST** coding practice for students.
 ## Overview
-This tiny program enables PhD research engineers to:
 - **Input Messages**: Enter short messages (up to 256 characters).
 - **Encrypt Securely**: Use AES-256-CBC encryption for data protection.
 - **Generate QR Codes**: Create scannable QR codes for offline transfer via smartphones in airplane mode.
 - **View Easily**: Display QR codes through a glove-friendly interface.
-  It demonstrates a few key ideas in a minimal footprint with portability; just a screen, keyboard and Pico:
+  It demonstrates a few key ideas in a minimal footprint with portability; just a screen, keyboard and an R Pi Pico:
 ## Key Features
 - **Robust Security**:
-  - AES-256-CBC encryption.
+  - AES-256-CBC encryption; could be higher but, that means longer keys and more typing; its a demo.
   - No hardcoded secrets.
   - Secure key and IV storage.
   - Local audit logging.
 - **Intuitive Interface**:
-  - Tkinter-based GUI, clickable with gloves for challenging environment.
+  - Tkinter-based GUI (clickable with gloves in winter).
 - **Dependable QR Codes**:
   - Medium error correction for reliability.
   - Scalable format for future display upgrades.
